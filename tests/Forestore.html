@@ -47,6 +47,9 @@
 		<script src="../src/map.js"></script>
 
 		<script src="assets/jquery-jvectormap-world-mill-en.js"></script>
+		
+		<script src="data/forest-data.js"></script>
+		
 		<script>
 			jQuery.noConflict();
 			jQuery(function() {
@@ -79,193 +82,7 @@
 						animate: true
 					});
 				});
-				var plants = [{
-					name: 'Amazon',
-					coords: [10.0091294, -70.0371812],
-					status: 'closed',
-					offsets: [0, 2]
-				}, {
-					name: 'Siberian taiga',
-					coords: [64.0543102, 115.4825862],
-					status: 'closed',
-					offsets: [0, 2]
-				}, {
-					name: 'Siberian taiga',
-					coords: [67.5543102, 96.4825862],
-					status: 'closed',
-					offsets: [0, 2]
-				}, {
-					name: 'Siberian taiga',
-					coords: [60.5543102, 93.4825862],
-					status: 'closed',
-					offsets: [0, 2]
-				}, {
-					name: 'Siberian taiga',
-					coords: [61.0543102, 65.4825862],
-					status: 'closed',
-					offsets: [0, 2]
-				}, {
-					name: 'Siberian taiga',
-					coords: [66.0543102, 136.4825862],
-					status: 'closed',
-					offsets: [0, 2]
-				}, {
-					name: '青木原树海6',
-					coords: [36.9030599, 138.4213693],
-					status: 'closed'
-				}, {
-					name: '青木原树海5',
-					coords: [-34.9030599, 142.4213693],
-					status: 'closed'
-				}, {
-					name: '青木原树海1',
-					coords: [14.9030599, 108.4213693],
-					status: 'closed'
-				}, {
-					name: '青木原树海2',
-					coords: [18.9030599, 100.6213693],
-					status: 'closed'
-				}, {
-					name: '青木原树海3',
-					coords: [14.9030599, 98.6213693],
-					status: 'closed'
-				}, {
-					name: '青木原树海4',
-					coords: [-4.3030599, 139.4213693],
-					status: 'closed'
-				}, {
-					name: 'Congo\'s rainforest1',
-					coords: [1.4472465, 22.9903674],
-					status: 'closed'
-				}, {
-					name: 'Congo\'s rainforest2',
-					coords: [-6.4472465, 16.9903674],
-					status: 'closed'
-				}, {
-					name: 'Congo\'s rainforest3',
-					coords: [-6.7472465, 36.9903674],
-					status: 'closed'
-				}, {
-					name: 'Congo\'s rainforest4',
-					coords: [5.4472465, 24.9903674],
-					status: 'closed'
-				}, {
-					name: 'Norway forest',
-					coords: [60.513264, 7.1020357],
-					status: 'activeUntil2018'
-				}, {
-					name: 'jingpo Lake',
-					coords: [44.364503, 129.076252],
-					status: 'closed'
-				}, {
-					name: 'Vienna woods',
-					coords: [48.0331853, 15.0505223],
-					status: 'closed',
-					offsets: [0, -2]
-				}, {
-					name: 'Swedish forest',
-					coords: [59.1351446, 18.1348691],
-					status: 'closed',
-					offsets: [0, -2]
-				}, {
-					name: 'Finnish forest',
-					coords: [60.6200685, 24.5306289],
-					status: 'closed'
-				}, {
-					name: 'Italian forest',
-					coords: [45.6558015, 12.2500848],
-					status: 'closed',
-					offsets: [0, -2]
-				}, {
-					name: 'Canada forest',
-					coords: [43.1417497, 79.6583877],
-					status: 'closed'
-				}, {
-					name: 'Canada forest',
-					coords: [45.709331, 73.415865],
-					status: 'closed'
-				}, {
-					name: 'Canada forest',
-					coords: [49.6396481, 123.3915617],
-					status: 'closed'
-				}, {
-					name: 'Chilean forests',
-					coords: [-33.0401151, -70.3721088],
-					status: 'activeUntil2022'
-				}, {
-					name: 'Chilean forests',
-					coords: [-23.0401151, -70.3721088],
-					status: 'activeUntil2022'
-				}, {
-					name: 'Chilean forests',
-					coords: [-11.0401151, -71.3721088],
-					status: 'activeUntil2022'
-				}, {
-					name: 'KKB',
-					coords: [43.8913533, 29.2005777],
-					status: 'closed',
-					offsets: [0, -5]
-				}, {
-					name: 'KKI',
-					coords: [23.5544748, 12.3472095],
-					status: 'activeUntil2022',
-					offsets: [0, 2]
-				}, {
-					name: 'KKU',
-					coords: [63.4293465, -128.4774649],
-					status: 'closed'
-				}, {
-					name: 'KNK',
-					coords: [19.1473279, 78.3827739],
-					status: 'closed'
-				}, {
-					name: 'KKP',
-					coords: [69.2513078, 58.4356761],
-					status: 'activeUntil2022',
-					offsets: [0, -2]
-				}, {
-					name: 'KKG3',
-					coords: [49.9841308, -110.1846373],
-					status: 'activeUntil2018'
-				}, {
-					name: 'KKG2',
-					coords: [32.9841308, -90.1846373],
-					status: 'activeUntil2018'
-				}, {
-					name: 'KKG1',
-					coords: [69.9841308, -160.1846373],
-					status: 'activeUntil2018'
-				}, {
-					name: 'KKG4',
-					coords: [19.9841308, -102.1846373],
-					status: 'activeUntil2018'
-				}, {
-					name: 'KKK',
-					coords: [53.4104656, 10.4091597],
-					status: 'closed'
-				}, {
-					name: 'KWG',
-					coords: [32.0348748, 109.4097793],
-					status: 'activeUntil2022'
-				}, {
-					name: 'KBR',
-					coords: [53.850666, 39.3457603],
-					status: 'closed',
-					offsets: [0, 5]
-				}, {
-					name: 'KMK',
-					coords: [-50.408791, 97.4861956],
-					status: 'closed'
-				}, {
-					name: 'THTR',
-					coords: [21.6786228, -7.9700232],
-					status: 'closed'
-				}, {
-					name: 'KKE',
-					coords: [-72.4216974, 7.3706389],
-					status: 'activeUntil2022',
-					offsets: [0, 2]
-				}];
+				var plants = plantsData;
 				$('#map1').vectorMap({
 					map: 'world_mill_en',
 					panOnDrag: true,
@@ -285,7 +102,12 @@
 							stroke: '#383f47'
 						}
 					},
-										series: {
+					regionStyle:{
+						initial:{
+							fill:'#834C24'
+						}
+					},
+					series: {
 						regions: [{
 							scale: ['#C8EEFF', '#0071A4'],
 							normalizeFunction: 'polynomial',
@@ -475,7 +297,6 @@
 							}
 						}]
 					},
-
 					backgroundColor: '#383f47',
 					markers: plants.map(function(h) {
 						return {
@@ -512,11 +333,47 @@
 			});
 		</script>
 		<style>
+			@keyframes markers_anime {
+				from {
+					stroke-width: 0;
+					stroke-opacity: 1;
+				}
+				to {
+					stroke-width: 120;
+					stroke-opacity: 0;
+				}
+			}
+			
+			@-webkit-keyframes markers_anime {
+				from {
+					stroke-width: 0;
+					stroke-opacity: 1;
+				}
+				to {
+					stroke-width: 120;
+					stroke-opacity: 0;
+				}
+			}
+			
 			#map1 {
 				width: 100%;
 				height: 786px;
 				padding: 0px;
 				margin: 0px;
+			}
+			
+			#firedMarker circle {
+				/*stroke: rgba(255, 255, 0, 0.6);*/
+				animation: markers_anime 3s;
+				-moz-animation: markers_anime 3s;
+				-webkit-animation: markers_anime 3s;
+				-ms-animation: markers_anime 3s;
+				-o-animation: markers_anime 3s;
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				-moz-animation-iteration-count: infinite;
+				-ms-animation-iteration-count: infinite;
+				-o-animation-iteration-count: infinite;
 			}
 		</style>
 	</head>
@@ -528,5 +385,41 @@
 		<button id="focus-coords">Focus on Cyprus</button>
 		<button id="focus-init">Return to the initial state</button>-->
 	</body>
+	<script>
+		jQuery.noConflict();
+		jQuery(document).ready(function($) {
+			//var svgDoc = $("svg").getSVGDocument();
+			$ = jQuery;
+			var g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+			g.setAttribute("id", "firedMarker");
+			$("svg").append(g);
+			var imageNum = document.getElementsByTagNameNS("http://www.w3.org/2000/svg", "image").length;
+			for (var i = 0; i < imageNum; i++) {
+				var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+				circle.setAttribute("fill-opacity", "0");
+				circle.setAttribute("r", "4");
+				$("#firedMarker").append(circle);
+			}
+			setInterval(refreshCircle, 100);
+			/*$.each($("svg>g image"), function() {
+				console.log(this.x.animVal.value);
+				$(this).append("<div class='firedFore'></div>");
+			});*/
+		});
+
+		function refreshCircle() {
+			var index, ix, iy,
+				i = document.getElementsByTagNameNS("http://www.w3.org/2000/svg", "image"),
+				c = document.getElementsByTagNameNS("http://www.w3.org/2000/svg", "circle");
+			var l = i.length;
+			for (index = 0; index < l; index++) {
+				if (i[index].href.animVal == "assets/iconfont-senlinziyuanguanli.png") {
+					c[index].setAttribute("stroke", "yellow");
+					c[index].setAttribute("cx", i[index].x.animVal.value + i[index].width.animVal.value / 2);
+					c[index].setAttribute("cy", i[index].y.animVal.value + i[index].height.animVal.value / 2);
+				}
+			}
+		}
+	</script>
 
 </html>
