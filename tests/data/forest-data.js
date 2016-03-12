@@ -39,7 +39,7 @@ var plantsData = [{
 }, {
 	name: '青木原树海1',
 	coords: [14.9030599, 108.4213693],
-	status: 'closed'
+	status: 'fired'
 }, {
 	name: '青木原树海2',
 	coords: [18.9030599, 100.6213693],
@@ -51,7 +51,7 @@ var plantsData = [{
 }, {
 	name: '青木原树海4',
 	coords: [-4.3030599, 139.4213693],
-	status: 'closed'
+	status: 'fired'
 }, {
 	name: 'Congo\'s rainforest1',
 	coords: [1.4472465, 22.9903674],
@@ -59,7 +59,7 @@ var plantsData = [{
 }, {
 	name: 'Congo\'s rainforest2',
 	coords: [-6.4472465, 16.9903674],
-	status: 'closed'
+	status: 'fired'
 }, {
 	name: 'Congo\'s rainforest3',
 	coords: [-6.7472465, 36.9903674],
@@ -75,11 +75,11 @@ var plantsData = [{
 }, {
 	name: 'jingpo Lake',
 	coords: [44.364503, 129.076252],
-	status: 'closed'
+	status: 'fired'
 }, {
 	name: 'Vienna woods',
 	coords: [48.0331853, 15.0505223],
-	status: 'closed',
+	status: 'fired',
 	offsets: [0, -2]
 }, {
 	name: 'Swedish forest',

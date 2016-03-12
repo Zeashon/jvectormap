@@ -47,9 +47,9 @@
 		<script src="../src/map.js"></script>
 
 		<script src="assets/jquery-jvectormap-world-mill-en.js"></script>
-		
+
 		<script src="data/forest-data.js"></script>
-		
+
 		<script>
 			jQuery.noConflict();
 			jQuery(function() {
@@ -102,9 +102,9 @@
 							stroke: '#383f47'
 						}
 					},
-					regionStyle:{
-						initial:{
-							fill:'#834C24'
+					regionStyle: {
+						initial: {
+							fill: '#000000',
 						}
 					},
 					series: {
@@ -297,7 +297,7 @@
 							}
 						}]
 					},
-					backgroundColor: '#383f47',
+					backgroundColor: '#000000',
 					markers: plants.map(function(h) {
 						return {
 							name: h.name,
@@ -321,7 +321,8 @@
 							scale: {
 								'closed': 'assets/iconfont-group.png',
 								'activeUntil2018': 'assets/iconfont-senlinziyuanguanli.png',
-								'activeUntil2022': 'assets/iconfont-group.png'
+								'activeUntil2022': 'assets/iconfont-group.png',
+								'fired':'assets/iconfont-shu.png'
 							},
 							values: plants.reduce(function(p, c, i) {
 								p[i] = c.status;
@@ -360,6 +361,11 @@
 				height: 786px;
 				padding: 0px;
 				margin: 0px;
+			}
+			
+			.jvectormap-region {
+				stroke: #4BFFFF;
+				stroke-width: 1;
 			}
 			
 			#firedMarker circle {
@@ -415,6 +421,10 @@
 			for (index = 0; index < l; index++) {
 				if (i[index].href.animVal == "assets/iconfont-senlinziyuanguanli.png") {
 					c[index].setAttribute("stroke", "yellow");
+					c[index].setAttribute("cx", i[index].x.animVal.value + i[index].width.animVal.value / 2);
+					c[index].setAttribute("cy", i[index].y.animVal.value + i[index].height.animVal.value / 2);
+				}else if(i[index].href.animVal == "assets/iconfont-shu.png"){
+					c[index].setAttribute("stroke", "red");
 					c[index].setAttribute("cx", i[index].x.animVal.value + i[index].width.animVal.value / 2);
 					c[index].setAttribute("cy", i[index].y.animVal.value + i[index].height.animVal.value / 2);
 				}
