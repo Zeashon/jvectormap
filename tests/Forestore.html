@@ -381,6 +381,26 @@
 				-ms-animation-iteration-count: infinite;
 				-o-animation-iteration-count: infinite;
 			}
+			
+			#top-bar{
+				width:100%;
+				height: 50px;
+				position: fixed;
+				top: 0;
+				background: rgba(250,250,250,0.8);
+				box-shadow: 0px 2px 5px 3px rgb(30,30,30);
+			}
+			
+			#left-side-icon{
+				width: 50px;
+				height: 50px;
+				position: fixed;
+				left: -5px;
+				bottom: 40px;
+				background: rgba(250,250,250,1);
+				border-radius: 20%;
+				/*box-shadow: 0px 0px 5px 3px rgb(30,30,30);*/
+			}
 		</style>
 	</head>
 
@@ -390,6 +410,8 @@
 		<button id="focus-multiple">Focus on Australia and Japan</button>
 		<button id="focus-coords">Focus on Cyprus</button>
 		<button id="focus-init">Return to the initial state</button>-->
+		<div id="top-bar"></div>
+		<div id="left-side-icon"></div>
 	</body>
 	<script>
 		jQuery.noConflict();
